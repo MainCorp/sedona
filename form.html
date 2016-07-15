@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sedona - Форма</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="page-navigation">
+          <ul class="page-navigation__list">
+            <li class="page-navigation__item">
+              <a class="page-navigation__link" href="#" title="Ссылка">Главная</a>
+            </li>
+            <li class="page-navigation__item">
+              <a class="page-navigation__link" href="#" title="Ссылка">Фото и видео</a>
+            </li>
+            <li class="page-navigation__item">
+              <a class="page-navigation__link" href="#" title="Ссылка">Форма отзыва</a>
+            </li>
+            <li class="page-navigation__item">
+              <a class="page-navigation__link" href="#" title="Ссылка">Html Academy</a>
+            </li>
+          </ul>
+
+          <div class="page-navigation__wrapper">
+            <button class="page-navigation__toggle" type="button">Закрыть меню</button>
+          </div>
+        </nav>
+
+        <div class="logo">
+          <img class="logo__item" src="#" width="102" height="83" alt="Логотип Sedona">
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <div class="container">
+        <div class="greeting">
+          <h1 class="greeting__title">Sedona</h1>
+        </div>
+
+        <div class="about">
+          <p class="about__title">Оставьте свой отзыв</p>
+          <p class="about__offer">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностьях</p>
+        </div>
+
+        <form class="form-review">
+          <div class="form-review__inner">
+            <h2 class="form-review__title">Представьтесь пожалуйста:</h2>
+            <label class="input">
+              Имя <input class="input__value" type="text" name="name" placeholder="Пётр">
+            </label>
+            <label class="input">
+              Фамилия <input class="input__value" type="text" name="surname" placeholder="Иванов">
+            </label>
+            <label class="input">
+              Отчество <input class="input__value" type="text" name="patronymic" placeholder="Александрович">
+            </label>
+          </div>
+
+          <div class="form-review__inner">
+            <h2 class="form-review__title">Контактная информация:</h2>
+            <label class="input">
+              Контактный телефон: <input class="input__value" type="tel" name="tel" placeholder="Введите телефон">
+            </label>
+            <label class="input">
+              Электронная почта: <input class="input__value" type="email" name="email" placeholder="Введите e-mail">
+            </label>
+          </div>
+
+          <div class="form-review__inner">
+            <h2 class="form-review__title">Ваше общее впечатление:</h2>
+            <label class="radio">
+              <input class="radio__value" type="radio" name="positive"> Скорее положительное
+            </label>
+            <label class="radio">
+              <input class="radio__value" type="radio" name="negative"> Скорее отрицательное
+            </label>
+            <label class="radio">
+              <input class="radio__value" type="radio" name="difficult"> Затрудняюсь ответить
+            </label>
+          </div>
+
+          <div class="form-review__inner">
+            <h2 class="form-review__title">Посещённые достопримечательности:</h2>
+            <label class="checkbox">
+              <input class="checkbox__value" type="checkbox" name="demon-bridge" checked> Мост Дьявола
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__value" type="checkbox" name="slide-park"> Слайд Парк
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__value" type="checkbox" name="mountain-bell" checked> Гора Колокол
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__value" type="checkbox" name="red-rocks" checked> Красные скалы
+            </label>
+          </div>
+
+          <div class="form-review__inner">
+            <h2 class="form-review__title">Опишите свои эмоции:</h2>
+            <label class="input">
+              <textarea class="input__value  input__value--frame" name="describe-emotions" placeholder="Опишите подробно все свои истории"></textarea>
+            </label>
+          </div>
+          <button class="button" type="button" name="review-btn">Отправить отзыв</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="tag">
+          <h2 class="tag__title">#VisitSedona</h2>
+        </div>
+
+        <div class="social">
+          <a class="social__link  social__link-tw" href="#" title="Социальная сеть Twiter">Twiter</a>
+          <a class="social__link  social__link-fb" href="#" title="Социальная сеть FaceBook">FaceBook</a>
+          <a class="social__link  social__link-yt" href="#" title="Социальная сеть YouTube">YouTube</a>
+        </div>
+
+        <div class="copyright">
+          <p class="copyright__title">
+            Разработано <img class="copyright__icon" width="27" height="34" src="#" alt="Логотип разработчика дизайна">
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
