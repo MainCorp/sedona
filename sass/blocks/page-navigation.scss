@@ -1,0 +1,27 @@
+.page-navigation__list {
+  /* Блочная модель */
+  padding: 0;
+  margin: 0;
+}
+
+.page-navigation__item {
+  /* Блочная модель */
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+  list-style: none;
+
+  &:nth-child(1) {
+    border-top: none;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.page-navigation__link {
+  /* Блочная модель */
+  display: block;
+
+  /* Оформление */
+  background-color: #81b3d2;
+}

@@ -1,0 +1,11 @@
+.addition {
+  background-color: #eeeeee;
+}
+
+.addition__item {
+  border-bottom: 1px solid #d6d6d6;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}

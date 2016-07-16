@@ -1,0 +1,24 @@
+.social__link {
+  /* Блочная модель */
+  display: inline-flex;
+  width: 46px;
+  height: 48px;
+
+  /* Типографика */
+  font-size: 0;
+
+  /* Оформление */
+  background-color: #81b3d2;
+}
+
+.social__link-tw {
+  background: #81b3d2 url("../img/icon-twitter.svg") center no-repeat;
+}
+
+.social__link-fb {
+  background: #81b3d2 url("../img/icon-facebook.svg") center no-repeat;
+}
+
+.social__link-yt {
+  background: #81b3d2 url("../img/icon-youtube.svg") center no-repeat;
+}

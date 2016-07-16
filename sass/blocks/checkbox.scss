@@ -1,0 +1,17 @@
+.checkbox {
+  display: flex;
+}
+
+.checkbox__value {
+  display: none;
+}
+
+.checkbox__state{
+  /* Блочная модель */
+  width: 56px;
+  height: 56px;
+
+  /* Оформление */
+  background-color: #f2f2f2;
+  border-radius: 10%;
+}

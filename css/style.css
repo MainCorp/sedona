@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -352,3 +353,130 @@ table {
 td,
 th {
   padding: 0; }
+
+.addition {
+  background-color: #eeeeee; }
+
+.addition__item {
+  border-bottom: 1px solid #d6d6d6; }
+  .addition__item:last-child {
+    border-bottom: none; }
+
+.button {
+  /*Блочная модель*/
+  border: none;
+  /* Оформление */
+  background-color: #81b3d2;
+  outline: 0; }
+
+.checkbox {
+  display: flex; }
+
+.checkbox__value {
+  display: none; }
+
+.checkbox__state {
+  /* Блочная модель */
+  width: 56px;
+  height: 56px;
+  /* Оформление */
+  background-color: #f2f2f2;
+  border-radius: 10%; }
+
+.greeting {
+  background: #e4f1f9 url("../img/bg-back-mobile@1x.jpg") center; }
+
+.input__value {
+  /* Блочная модель */
+  border: none;
+  /* Оформление */
+  background-color: #f2f2f2;
+  outline: 0; }
+
+.offer {
+  background-color: #81b3d2; }
+
+.offer__image {
+  /* Блочная модель */
+  width: 320px;
+  height: 260px; }
+
+.page-footer {
+  background-color: #fefefe; }
+
+.page-navigation__list {
+  /* Блочная модель */
+  padding: 0;
+  margin: 0; }
+
+.page-navigation__item {
+  /* Блочная модель */
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+  list-style: none; }
+  .page-navigation__item:nth-child(1) {
+    border-top: none; }
+  .page-navigation__item:last-child {
+    border-bottom: none; }
+
+.page-navigation__link {
+  /* Блочная модель */
+  display: block;
+  /* Оформление */
+  background-color: #81b3d2; }
+
+.photo__item {
+  border-top: 1px solid #e5e5e5; }
+  .photo__item:last-child {
+    border-bottom: 1px solid #e5e5e5; }
+
+.presentation__set {
+  background-color: #f2f2f2; }
+
+.radio {
+  display: flex; }
+
+.radio__value {
+  display: none; }
+
+.radio__state {
+  /* Блочная модель */
+  width: 56px;
+  height: 56px;
+  /* Оформление */
+  background-color: #f2f2f2;
+  border-radius: 50%; }
+
+.social__link {
+  /* Блочная модель */
+  display: inline-flex;
+  width: 46px;
+  height: 48px;
+  /* Типографика */
+  font-size: 0;
+  /* Оформление */
+  background-color: #81b3d2; }
+
+.social__link-tw {
+  background: #81b3d2 url("../img/icon-twitter.svg") center no-repeat; }
+
+.social__link-fb {
+  background: #81b3d2 url("../img/icon-facebook.svg") center no-repeat; }
+
+.social__link-yt {
+  background: #81b3d2 url("../img/icon-youtube.svg") center no-repeat; }
+
+.toggle {
+  /* Блочная модель */
+  width: 22px;
+  height: 22px;
+  border: none;
+  /* Типографика */
+  font-size: 0;
+  /* Оформление */
+  background-color: transparent;
+  outline: 1px solid red; }
+  .toggle--close {
+    background-image: url("../img/icon-cross.svg"); }
+  .toggle--open {
+    background-image: url("../img/icon-menu.svg"); }

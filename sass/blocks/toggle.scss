@@ -1,0 +1,21 @@
+.toggle {
+  /* Блочная модель */
+  width: 22px;
+  height: 22px;
+  border: none;
+
+  /* Типографика */
+  font-size: 0;
+
+  /* Оформление */
+  background-color: transparent;
+  outline: 1px solid red;
+
+  &--close {
+    background-image: url("../img/icon-cross.svg");
+  }
+
+  &--open {
+    background-image: url("../img/icon-menu.svg");
+  }
+}

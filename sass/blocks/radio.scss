@@ -1,0 +1,17 @@
+.radio {
+  display: flex;
+}
+
+.radio__value {
+  display: none;
+}
+
+.radio__state {
+  /* Блочная модель */
+  width: 56px;
+  height: 56px;
+
+  /* Оформление */
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
