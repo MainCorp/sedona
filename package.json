@@ -1,0 +1,27 @@
+{
+  "name": "sedona.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Проект Sedona",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MainCorp/sedona.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MainCorp/sedona.github.io/issues"
+  },
+  "homepage": "https://github.com/MainCorp/sedona.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.10",
+    "editorconfig-tools": "0.1.1",
+    "gulp": "3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.1"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "start": "gulp serve"
+  }
+}
