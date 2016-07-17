@@ -1,15 +1,27 @@
+.hotel {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
 .hotel__title {
+  /* Блочная модель */
+  margin: 0;
+
+  /* Типографика */
   font-family: $font-PTSans_Bold;
   font-size: 21px;
   line-height: 26px;
   color: #000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hotel__desc {
+  /* Типографика */
   font-family: $font-PTSans;
   font-size: 14px;
   line-height: 24px;
   color: $color-alarm;
   text-transform: uppercase;
+  text-align: center;
 }

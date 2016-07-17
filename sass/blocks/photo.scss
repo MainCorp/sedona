@@ -3,6 +3,9 @@
 }
 
 .photo__item {
+  /* Блочная модель */
+  padding-top: 20px;
+  padding-bottom: 15px;
   border-top: 1px solid $color-geyn;
 
   &:last-child {
@@ -11,6 +14,7 @@
 }
 
 .photo__title {
+  /* Типографика */
   font-family: $font-PTSans_Bold;
   font-size: 14px;
   line-height: 24px;
@@ -19,6 +23,7 @@
 }
 
 .photo__desc {
+  /* Типографика */
   font-family: $font-PTSans;
   font-size: 14px;
   line-height: 24px;
@@ -26,6 +31,10 @@
 }
 
 .photo__quantity {
+  /* Блочная модель */
+  margin: 0;
+
+  /* Типографика */
   font-family: $font-PTSans_Bold;
   font-size: 14px;
   line-height: 24px;

@@ -3,12 +3,17 @@
 }
 
 .offer__title {
+  /* Блочная модель */
+  margin: 0;
+  padding-top: 45px;
+
   /* Типографика */
   font-family: $font-PTSans_Bold;
   font-size: 18px;
   line-height: 26px;
   color: #fff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .offer__number {
@@ -17,19 +22,33 @@
   font-size: 14px;
   line-height: 21px;
   color: #fff;
+  text-align: center;
 }
 
 .offer__desc {
+  /* Блочная модель */
+  margin: 0;
+  padding-bottom: 43px;
+
   /* Типографика */
   font-family: $font-PTSans;
   font-size: 14px;
   line-height: 21px;
   color: #fff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .offer__image {
   /* Блочная модель */
   width: 320px;
   height:260px;
+  overflow: hidden;
+}
+
+.offer__image-item {
+  /* Блочная модель */
+  display: block;
+  width: auto;
+  margin-left: -102px;
 }

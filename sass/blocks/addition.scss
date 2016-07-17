@@ -3,6 +3,8 @@
 }
 
 .addition__item {
+  /* Блочная модель */
+  padding: 30px 0;
   border-bottom: 1px solid $color-abdel-kerim;
 
   &:last-child {
@@ -11,12 +13,16 @@
 }
 
 .addition__title {
+  /* Блочная модель */
+  margin: 0;
+
   /* Типографика */
   font-family: $font-PTSans_Bold;
   font-size: 18px;
   line-height: 26px;
   color: #000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .addition__number {
@@ -24,14 +30,19 @@
   font-family: $font-PTSans;
   font-size: 14px;
   line-height: 21px;
-  color: $color-smoky-white;
+  color: $color-alarm;
+  text-align: center;
 }
 
 .addition__desc {
+  /* Блочная модель */
+  margin: 0;
+
   /* Типографика */
   font-family: $font-PTSans;
   font-size: 14px;
   line-height: 21px;
-  color: $color-smoky-white;
+  color: $color-alarm;
   text-transform: uppercase;
+  text-align: center;
 }

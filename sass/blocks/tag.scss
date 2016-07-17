@@ -1,7 +1,14 @@
 .tag__title {
+  /* Блочная модель */
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  /* Типографика */
   font-family: $font-PTSans_Bold;
   font-size: 21px;
   line-height: 26px;
   color: #000;
   text-transform: uppercase;
+  text-align: center;
 }

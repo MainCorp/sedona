@@ -365,55 +365,74 @@ th {
   font-weight: bold; }
 
 .about__title {
+  /* Блочная модель */
+  margin: 0;
+  padding-top: 43px;
+  padding-bottom: 35px;
   /* Типографика */
   font-family: "PTSans Bold";
   font-size: 18px;
   line-height: 26px;
   color: #000;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .about__offer {
+  /* Блочная модель */
+  margin: 0;
+  padding-bottom: 45px;
   /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 26px;
   color: #333;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .addition {
   background-color: #eee; }
 
 .addition__item {
+  /* Блочная модель */
+  padding: 30px 0;
   border-bottom: 1px solid #d6d6d6; }
   .addition__item:last-child {
     border-bottom: none; }
 
 .addition__title {
+  /* Блочная модель */
+  margin: 0;
   /* Типографика */
   font-family: "PTSans Bold";
   font-size: 18px;
   line-height: 26px;
   color: #000;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .addition__number {
   /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 21px;
-  color: #eee; }
+  color: #333;
+  text-align: center; }
 
 .addition__desc {
+  /* Блочная модель */
+  margin: 0;
   /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 21px;
-  color: #eee;
-  text-transform: uppercase; }
+  color: #333;
+  text-transform: uppercase;
+  text-align: center; }
 
 .button {
   /*Блочная модель*/
   border: none;
+  width: 100%;
   /* Типографика */
   font-family: "PTSans Bold";
   font-size: 21px;
@@ -444,7 +463,11 @@ th {
   background-color: #eee;
   border-radius: 10%; }
 
+.container {
+  margin: 0 auto; }
+
 .copyright__title {
+  /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 26px;
@@ -452,6 +475,7 @@ th {
   text-transform: uppercase; }
 
 .form-review__title {
+  /* Типографика */
   font-family: "PTSans Bold";
   font-size: 18px;
   line-height: 26px;
@@ -459,8 +483,16 @@ th {
   text-transform: uppercase; }
 
 .greeting {
+  /* Блочная модель */
+  padding-top: 50px;
+  padding-bottom: 70px;
+  /* Офомление */
   background: #e4f1f9 url("../img/bg-back-mobile@1x.jpg") center;
   background-size: cover; }
+  .greeting--background {
+    /* Блочная модель */
+    padding-top: 173px;
+    padding-bottom: 167px; }
 
 .greeting__title {
   /* Блочная модель */
@@ -468,23 +500,35 @@ th {
   height: 50px;
   /* Оформление */
   background-image: url("../img/text-sedona.svg");
-  background-size: contain; }
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.hotel {
+  padding-top: 30px;
+  padding-bottom: 50px; }
 
 .hotel__title {
+  /* Блочная модель */
+  margin: 0;
+  /* Типографика */
   font-family: "PTSans Bold";
   font-size: 21px;
   line-height: 26px;
   color: #000;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .hotel__desc {
+  /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 24px;
   color: #333;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .input {
+  /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 26px;
@@ -503,36 +547,56 @@ th {
   background-color: #eee;
   outline: 0; }
 
+.map {
+  margin-bottom: 10px;
+  height: 350px; }
+
 .offer {
   background-color: #81b3d2; }
 
 .offer__title {
+  /* Блочная модель */
+  margin: 0;
+  padding-top: 45px;
   /* Типографика */
   font-family: "PTSans Bold";
   font-size: 18px;
   line-height: 26px;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .offer__number {
   /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 21px;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
 .offer__desc {
+  /* Блочная модель */
+  margin: 0;
+  padding-bottom: 43px;
   /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 21px;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .offer__image {
   /* Блочная модель */
   width: 320px;
-  height: 260px; }
+  height: 260px;
+  overflow: hidden; }
+
+.offer__image-item {
+  /* Блочная модель */
+  display: block;
+  width: auto;
+  margin-left: -102px; }
 
 .page-footer {
   background-color: #fefefe; }
@@ -559,9 +623,10 @@ th {
   font-family: "PTSans Bold";
   font-size: 18px;
   line-height: 40px;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  text-align: center;
   /* Оформление */
   background-color: #81b3d2; }
 
@@ -569,11 +634,15 @@ th {
   font-size: 0; }
 
 .photo__item {
+  /* Блочная модель */
+  padding-top: 20px;
+  padding-bottom: 15px;
   border-top: 1px solid #e5e5e5; }
   .photo__item:last-child {
     border-bottom: 1px solid #e5e5e5; }
 
 .photo__title {
+  /* Типографика */
   font-family: "PTSans Bold";
   font-size: 14px;
   line-height: 24px;
@@ -581,12 +650,16 @@ th {
   text-transform: uppercase; }
 
 .photo__desc {
+  /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 24px;
   color: #333; }
 
 .photo__quantity {
+  /* Блочная модель */
+  margin: 0;
+  /* Типографика */
   font-family: "PTSans Bold";
   font-size: 14px;
   line-height: 24px;
@@ -615,7 +688,12 @@ th {
   background-color: #eee;
   border-radius: 50%; }
 
+.recommendation {
+  /* Блочная модель */
+  padding-top: 25px; }
+
 .recommendation__title {
+  /* Типографика */
   font-family: "PTSans Bold";
   font-size: 18px;
   line-height: 26px;
@@ -623,6 +701,7 @@ th {
   text-transform: uppercase; }
 
 .recommendation__desc {
+  /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 21px;
@@ -649,11 +728,17 @@ th {
   background: #81b3d2 url("../img/icon-youtube.svg") center no-repeat; }
 
 .tag__title {
+  /* Блочная модель */
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  /* Типографика */
   font-family: "PTSans Bold";
   font-size: 21px;
   line-height: 26px;
   color: #000;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .toggle {
   /* Блочная модель */

@@ -1,6 +1,17 @@
 .greeting {
+  /* Блочная модель */
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  /* Офомление */
   background: $color-lavender url("../img/bg-back-mobile@1x.jpg") center;
   background-size: cover;
+
+  &--background {
+    /* Блочная модель */
+    padding-top: 173px;
+    padding-bottom: 167px;
+  }
 }
 
 .greeting__title {
@@ -11,4 +22,5 @@
   /* Оформление */
   background-image: url("../img/text-sedona.svg");
   background-size: contain;
+  background-repeat: no-repeat;
 }

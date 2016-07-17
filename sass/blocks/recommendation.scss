@@ -1,4 +1,10 @@
+.recommendation {
+  /* Блочная модель */
+  padding-top: 25px;
+}
+
 .recommendation__title {
+  /* Типографика */
   font-family: $font-PTSans_Bold;
   font-size: 18px;
   line-height: 26px;
@@ -7,6 +13,7 @@
 }
 
 .recommendation__desc {
+  /* Типографика */
   font-family: $font-PTSans;
   font-size: 14px;
   line-height: 21px;

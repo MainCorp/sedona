@@ -1,17 +1,28 @@
 .about__title {
+  /* Блочная модель */
+  margin: 0;
+  padding-top: 43px;
+  padding-bottom: 35px;
+
   /* Типографика */
   font-family: $font-PTSans_Bold;
   font-size: 18px;
   line-height: 26px;
   color: #000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .about__offer {
+  /* Блочная модель */
+  margin: 0;
+  padding-bottom: 45px;
+
   /* Типографика */
   font-family: $font-PTSans;
   font-size: 14px;
   line-height: 26px;
   color: $color-alarm;
   text-transform: uppercase;
+  text-align: center;
 }
