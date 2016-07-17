@@ -1,11 +1,37 @@
 .addition {
-  background-color: #eeeeee;
+  background-color: $color-smoky-white;
 }
 
 .addition__item {
-  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid $color-abdel-kerim;
 
   &:last-child {
     border-bottom: none;
   }
+}
+
+.addition__title {
+  /* Типографика */
+  font-family: $font-PTSans_Bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.addition__number {
+  /* Типографика */
+  font-family: $font-PTSans;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-smoky-white;
+}
+
+.addition__desc {
+  /* Типографика */
+  font-family: $font-PTSans;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-smoky-white;
+  text-transform: uppercase;
 }

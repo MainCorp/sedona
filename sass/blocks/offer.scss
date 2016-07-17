@@ -1,5 +1,31 @@
 .offer {
-  background-color: #81b3d2;
+  background-color: $color-blue-gray;
+}
+
+.offer__title {
+  /* Типографика */
+  font-family: $font-PTSans_Bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.offer__number {
+  /* Типографика */
+  font-family: $font-PTSans;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.offer__desc {
+  /* Типографика */
+  font-family: $font-PTSans;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .offer__image {

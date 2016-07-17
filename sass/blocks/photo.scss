@@ -1,7 +1,33 @@
+.photo__section-title {
+  font-size: 0;
+}
+
 .photo__item {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $color-geyn;
 
   &:last-child {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid $color-geyn;
   }
+}
+
+.photo__title {
+  font-family: $font-PTSans_Bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.photo__desc {
+  font-family: $font-PTSans;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-alarm;
+}
+
+.photo__quantity {
+  font-family: $font-PTSans_Bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
 }

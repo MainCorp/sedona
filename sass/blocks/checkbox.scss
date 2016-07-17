@@ -1,5 +1,12 @@
 .checkbox {
+  /* Блочная модель */
   display: flex;
+
+  /* Типографика */
+  font-family: $font-PTSans_Bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
 }
 
 .checkbox__value {
@@ -12,6 +19,6 @@
   height: 56px;
 
   /* Оформление */
-  background-color: #f2f2f2;
+  background-color: $color-smoky-white;
   border-radius: 10%;
 }

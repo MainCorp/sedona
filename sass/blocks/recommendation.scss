@@ -1,0 +1,15 @@
+.recommendation__title {
+  font-family: $font-PTSans_Bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.recommendation__desc {
+  font-family: $font-PTSans;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-alarm;
+  text-transform: uppercase;
+}

@@ -6,8 +6,8 @@
 
 .page-navigation__item {
   /* Блочная модель */
-  border-bottom: 1px solid #678fa8;
-  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid $color-pink-violet;
+  border-top: 1px solid $color-light-blue;
   list-style: none;
 
   &:nth-child(1) {
@@ -22,6 +22,14 @@
   /* Блочная модель */
   display: block;
 
+  /* Типографика */
+  font-family: $font-PTSans_Bold;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+
   /* Оформление */
-  background-color: #81b3d2;
+  background-color: $color-blue-gray;
 }

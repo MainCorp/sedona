@@ -1,8 +1,22 @@
+.input {
+  font-family: $font-PTSans;
+  font-size: 14px;
+  line-height: 26px;
+  color: $color-alarm;
+  text-transform: uppercase;
+}
+
 .input__value {
   /* Блочная модель */
   border: none;
 
+  /* Типографика */
+  font-family: $font-PTSans_Bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+
   /* Оформление */
-  background-color: #f2f2f2;
+  background-color: $color-smoky-white;
   outline: 0;
 }

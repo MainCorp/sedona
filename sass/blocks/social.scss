@@ -8,17 +8,17 @@
   font-size: 0;
 
   /* Оформление */
-  background-color: #81b3d2;
+  background-color: $color-blue-gray;
 }
 
 .social__link-tw {
-  background: #81b3d2 url("../img/icon-twitter.svg") center no-repeat;
+  background: $color-blue-gray url("../img/icon-twitter.svg") center no-repeat;
 }
 
 .social__link-fb {
-  background: #81b3d2 url("../img/icon-facebook.svg") center no-repeat;
+  background: $color-blue-gray url("../img/icon-facebook.svg") center no-repeat;
 }
 
 .social__link-yt {
-  background: #81b3d2 url("../img/icon-youtube.svg") center no-repeat;
+  background: $color-blue-gray url("../img/icon-youtube.svg") center no-repeat;
 }

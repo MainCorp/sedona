@@ -1,3 +1,14 @@
 .greeting {
-  background: #e4f1f9 url("../img/bg-back-mobile@1x.jpg") center;
+  background: $color-lavender url("../img/bg-back-mobile@1x.jpg") center;
+  background-size: cover;
+}
+
+.greeting__title {
+  /* Блочная модель */
+  width: 280px;
+  height: 50px;
+
+  /* Оформление */
+  background-image: url("../img/text-sedona.svg");
+  background-size: contain;
 }

@@ -2,7 +2,14 @@
   /*Блочная модель*/
   border: none;
 
+  /* Типографика */
+  font-family: $font-PTSans_Bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #fff;
+  text-transform: uppercase;
+
   /* Оформление */
-  background-color: #81b3d2;
+  background-color: $color-krayola;
   outline: 0;
 }
