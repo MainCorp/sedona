@@ -1,3 +1,10 @@
+.about {
+  position: relative;
+
+  &::after {
+    @include trinagle;
+  }
+}
 .about__title {
   /* Блочная модель */
   margin: 0;

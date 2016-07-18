@@ -21,6 +21,8 @@
 .page-navigation__link {
   /* Блочная модель */
   display: block;
+  padding-top: 13px;
+  padding-bottom: 10px;
 
   /* Типографика */
   font-family: $font-PTSans_Bold;

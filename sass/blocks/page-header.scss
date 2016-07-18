@@ -1,0 +1,10 @@
+.page-header__wrapper {
+  /* Позиционирование */
+  position: relative;
+  z-index: 999;
+
+  /* Блочная модель */
+  display: flex;
+  justify-content: center;
+  height: 55px;
+}

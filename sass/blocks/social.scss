@@ -1,8 +1,14 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .social__link {
   /* Блочная модель */
   display: inline-flex;
   width: 46px;
   height: 48px;
+  margin-right: 10px;
 
   /* Типографика */
   font-size: 0;

@@ -1,3 +1,13 @@
 .container {
+  /* Блочная модель */
+  margin: 0 auto;
+}
+
+.container__wrapper {
+  /* Блочная модель */
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
 }

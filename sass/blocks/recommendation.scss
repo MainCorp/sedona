@@ -3,6 +3,14 @@
   padding-top: 25px;
 }
 
+.recommendation__item {
+  display: flex;
+}
+
+.recommendation__inner {
+  margin-left: 10px;
+}
+
 .recommendation__title {
   /* Типографика */
   font-family: $font-PTSans_Bold;

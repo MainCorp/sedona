@@ -1,5 +1,10 @@
 .greeting {
+  /* Позиционирование */
+  position: relative;
+
   /* Блочная модель */
+  display: flex;
+  justify-content: center;
   padding-top: 50px;
   padding-bottom: 70px;
 
@@ -9,8 +14,7 @@
 
   &--background {
     /* Блочная модель */
-    padding-top: 173px;
-    padding-bottom: 167px;
+    padding: 90px 0;
   }
 }
 
@@ -23,4 +27,12 @@
   background-image: url("../img/text-sedona.svg");
   background-size: contain;
   background-repeat: no-repeat;
+
+  &--bg {
+    /* Блочная модель */
+    height: 220px;
+
+    /* Оформление */
+    background-image: url("../img/text-sedona-index.svg");
+  }
 }

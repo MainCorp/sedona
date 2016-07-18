@@ -364,6 +364,22 @@ th {
   src: url("../fonts/ptsans_bold.woff") format("woff"), url("../fonts/ptsans_bold.ttf") format("ttf");
   font-weight: bold; }
 
+.about {
+  position: relative; }
+  .about::after {
+    content: "";
+    /* Позиционирование */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* Блочная модель */
+    width: 320px;
+    height: 26px;
+    /* Оформление */
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 110%; }
+
 .about__title {
   /* Блочная модель */
   margin: 0;
@@ -433,6 +449,7 @@ th {
   /*Блочная модель*/
   border: none;
   width: 100%;
+  padding: 16px 0;
   /* Типографика */
   font-family: "PTSans Bold";
   font-size: 21px;
@@ -464,6 +481,18 @@ th {
   border-radius: 10%; }
 
 .container {
+  /* Блочная модель */
+  margin: 0 auto; }
+
+.container__wrapper {
+  /* Блочная модель */
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto; }
+
+.copyright {
   margin: 0 auto; }
 
 .copyright__title {
@@ -483,7 +512,11 @@ th {
   text-transform: uppercase; }
 
 .greeting {
+  /* Позиционирование */
+  position: relative;
   /* Блочная модель */
+  display: flex;
+  justify-content: center;
   padding-top: 50px;
   padding-bottom: 70px;
   /* Офомление */
@@ -491,8 +524,7 @@ th {
   background-size: cover; }
   .greeting--background {
     /* Блочная модель */
-    padding-top: 173px;
-    padding-bottom: 167px; }
+    padding: 90px 0; }
 
 .greeting__title {
   /* Блочная модель */
@@ -502,6 +534,11 @@ th {
   background-image: url("../img/text-sedona.svg");
   background-size: contain;
   background-repeat: no-repeat; }
+  .greeting__title--bg {
+    /* Блочная модель */
+    height: 220px;
+    /* Оформление */
+    background-image: url("../img/text-sedona-index.svg"); }
 
 .hotel {
   padding-top: 30px;
@@ -548,8 +585,9 @@ th {
   outline: 0; }
 
 .map {
-  margin-bottom: 10px;
-  height: 350px; }
+  margin: 0 auto 10px;
+  height: 350px;
+  width: 320px; }
 
 .offer {
   background-color: #81b3d2; }
@@ -588,7 +626,7 @@ th {
 
 .offer__image {
   /* Блочная модель */
-  width: 320px;
+  width: 280px;
   height: 260px;
   overflow: hidden; }
 
@@ -600,6 +638,15 @@ th {
 
 .page-footer {
   background-color: #fefefe; }
+
+.page-header__wrapper {
+  /* Позиционирование */
+  position: relative;
+  z-index: 999;
+  /* Блочная модель */
+  display: flex;
+  justify-content: center;
+  height: 55px; }
 
 .page-navigation__list {
   /* Блочная модель */
@@ -619,6 +666,8 @@ th {
 .page-navigation__link {
   /* Блочная модель */
   display: block;
+  padding-top: 13px;
+  padding-bottom: 10px;
   /* Типографика */
   font-family: "PTSans Bold";
   font-size: 18px;
@@ -631,7 +680,8 @@ th {
   background-color: #81b3d2; }
 
 .photo__section-title {
-  font-size: 0; }
+  visibility: hidden;
+  display: none; }
 
 .photo__item {
   /* Блочная модель */
@@ -692,6 +742,12 @@ th {
   /* Блочная модель */
   padding-top: 25px; }
 
+.recommendation__item {
+  display: flex; }
+
+.recommendation__inner {
+  margin-left: 10px; }
+
 .recommendation__title {
   /* Типографика */
   font-family: "PTSans Bold";
@@ -708,11 +764,17 @@ th {
   color: #333;
   text-transform: uppercase; }
 
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 .social__link {
   /* Блочная модель */
   display: inline-flex;
   width: 46px;
   height: 48px;
+  margin-right: 10px;
   /* Типографика */
   font-size: 0;
   /* Оформление */
@@ -750,6 +812,16 @@ th {
   /* Оформление */
   background-color: transparent; }
   .toggle--close {
+    /* Позиционирование */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    /* Оформление */
     background-image: url("../img/icon-cross.svg"); }
   .toggle--open {
+    /* Позиционирование */
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    /* Оформление */
     background-image: url("../img/icon-menu.svg"); }

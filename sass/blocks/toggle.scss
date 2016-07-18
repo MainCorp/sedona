@@ -11,10 +11,22 @@
   background-color: transparent;
 
   &--close {
+    /* Позиционирование */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    /* Оформление */
     background-image: url("../img/icon-cross.svg");
   }
 
   &--open {
+    /* Позиционирование */
+    position: absolute;
+    right: 20px;
+    top: 17px;
+
+    /* Оформление */
     background-image: url("../img/icon-menu.svg");
   }
 }
