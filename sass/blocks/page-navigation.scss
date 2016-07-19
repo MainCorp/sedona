@@ -1,5 +1,6 @@
 .page-navigation__wrapper {
   @media #{$tablet} {
+    /* Блочная модель */
     width: 768px;
     margin: 0 auto;
   }
@@ -9,6 +10,7 @@
   outline: 1px solid red;
 
   @media #{$tablet} {
+    /* Блочная модель */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,6 +23,7 @@
   margin: 0;
 
   @media #{$tablet} {
+    /* Блочная модель */
     display: flex;
     flex-direction: row;
     margin-left: 50px;
@@ -50,6 +53,7 @@
     &:last-child {
       border-bottom: 1px solid $color-pink-violet;
       @media #{$tablet} {
+        /* Блочная модель */
         border: none;
         margin-left: 75px;
       }
@@ -60,6 +64,7 @@
     &:nth-child(1) {
       border-top: 1px solid $color-light-blue;
       @media #{$tablet} {
+        /* Блочная модель */
         border: none;
         margin-right: 50px;
       }

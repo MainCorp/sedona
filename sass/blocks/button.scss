@@ -16,6 +16,7 @@
   outline: 0;
 
   @media #{$tablet} {
+    /* Блочная модель */
     width: 400px;
     margin: 0 auto;
   }

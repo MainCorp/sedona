@@ -1,13 +1,16 @@
 .offer {
   @media #{$tablet} {
+    /* Блочная модель */
     display: flex;
   }
 }
 
 .offer__wrapper {
+  /* Оформление */
   background-color: $color-blue-gray;
 
   @media #{$tablet} {
+    /* Блочная модель */
     width: 255px;
   }
 }
@@ -26,9 +29,12 @@
   text-align: center;
 
   @media #{$tablet} {
-    font-size: 21px;
+    /* Блочная модель */
     max-width: 151px;
     margin: 0 auto;
+
+    /* Типографика */
+    font-size: 21px;
   }
 }
 

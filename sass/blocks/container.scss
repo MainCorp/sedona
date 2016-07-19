@@ -9,6 +9,7 @@
 
   &--footer  {
     @media #{$tablet} {
+      /* Блочная модель */
       flex-direction: row;
       justify-content: space-around;
     }

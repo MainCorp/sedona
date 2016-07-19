@@ -27,6 +27,7 @@
 
 .page-header__container {
   @media #{$tablet} {
+    /* Блочная модель */
     width: 768px;
     margin: 0 auto;
   }
