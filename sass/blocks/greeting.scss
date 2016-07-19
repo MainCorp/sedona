@@ -34,5 +34,11 @@
 
     /* Оформление */
     background-image: url("../img/text-sedona-index.svg");
+
+    @media #{$tablet} {
+      height: 350px;
+      width: 450px;
+      margin: 0 auto;
+    }
   }
 }

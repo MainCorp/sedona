@@ -1,5 +1,9 @@
 .copyright {
   margin: 0 auto;
+
+  @media #{$tablet} {
+    margin: 0;
+  }
 }
 
 .copyright__title {

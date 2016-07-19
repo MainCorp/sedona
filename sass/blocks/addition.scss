@@ -1,5 +1,12 @@
 .addition {
   background-color: $color-smoky-white;
+
+  @media #{$tablet} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+  }
 }
 
 .addition__item {
@@ -9,6 +16,12 @@
 
   &:last-child {
     border-bottom: none;
+  }
+
+  @media #{$tablet} {
+    border: none;
+    width: 170px;
+    padding: 0;
   }
 }
 
@@ -23,6 +36,13 @@
   color: #000;
   text-transform: uppercase;
   text-align: center;
+
+  @media #{$tablet} {
+    width: 110px;
+    margin: 0 auto;
+
+    font-size: 21px;
+  }
 }
 
 .addition__number {

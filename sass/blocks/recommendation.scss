@@ -1,10 +1,41 @@
 .recommendation {
   /* Блочная модель */
   padding-top: 25px;
+
+  @media #{$tablet} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 50px;
+  }
 }
 
 .recommendation__item {
   display: flex;
+
+  &:nth-child(2) {
+    @media #{$tablet} {
+      order: 1;
+    }
+  }
+
+  @media #{$tablet} {
+    flex-direction: column;
+    max-width: 170px;
+    text-align: center;
+  }
+}
+
+.recommendation__image {
+  width: 33px;
+  height: 38px;
+
+  @media #{$tablet} {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+  }
 }
 
 .recommendation__inner {

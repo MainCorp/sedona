@@ -14,4 +14,9 @@
   /* Оформление */
   background-color: $color-krayola;
   outline: 0;
+
+  @media #{$tablet} {
+    width: 400px;
+    margin: 0 auto;
+  }
 }

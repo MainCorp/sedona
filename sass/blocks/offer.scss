@@ -1,5 +1,15 @@
 .offer {
+  @media #{$tablet} {
+    display: flex;
+  }
+}
+
+.offer__wrapper {
   background-color: $color-blue-gray;
+
+  @media #{$tablet} {
+    width: 255px;
+  }
 }
 
 .offer__title {
@@ -14,6 +24,12 @@
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+
+  @media #{$tablet} {
+    font-size: 21px;
+    max-width: 151px;
+    margin: 0 auto;
+  }
 }
 
 .offer__number {
@@ -37,6 +53,10 @@
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+
+  @media #{$tablet} {
+    padding: 0 50px;
+  }
 }
 
 .offer__image {
@@ -44,6 +64,14 @@
   width: 280px;
   height:260px;
   overflow: hidden;
+
+  &--place {
+    order: -1;
+  }
+
+  @media #{$tablet} {
+    width: 512px;
+  }
 }
 
 .offer__image-item {

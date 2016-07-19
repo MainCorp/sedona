@@ -1,13 +1,20 @@
 .container {
   /* Блочная модель */
-  margin: 0 auto;
-}
-
-.container__wrapper {
-  /* Блочная модель */
   width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  outline: 1px solid red;
+
+  &--footer  {
+    @media #{$tablet} {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  @media #{$tablet} {
+    width: 768px;
+  }
 }

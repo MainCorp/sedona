@@ -18,6 +18,12 @@
   color: #000;
   text-transform: uppercase;
   text-align: center;
+
+  @media #{$tablet} {
+    font-size: 21px;
+    max-width: 485px;
+    margin: 0 auto;
+  }
 }
 
 .about__offer {
@@ -32,4 +38,9 @@
   color: $color-alarm;
   text-transform: uppercase;
   text-align: center;
+
+  @media #{$tablet} {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }

@@ -10,6 +10,10 @@
   /* Оформление */
   background-color: transparent;
 
+  @media #{$tablet} {
+    display: none;
+  }
+
   &--close {
     /* Позиционирование */
     position: absolute;

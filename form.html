@@ -9,30 +9,36 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-navigation">
-        <ul class="page-navigation__list">
-          <li class="page-navigation__item">
-            <a class="page-navigation__link" href="index.html" title="Ссылка">Главная</a>
-          </li>
-          <li class="page-navigation__item">
-            <a class="page-navigation__link" href="photo.html" title="Ссылка">Фото и видео</a>
-          </li>
-          <li class="page-navigation__item">
-            <a class="page-navigation__link" title="Ссылка">Форма отзыва</a>
-          </li>
-          <li class="page-navigation__item">
-            <a class="page-navigation__link" href="https://htmlacademy.ru/" title="Ссылка">Html Academy</a>
-          </li>
-        </ul>
+      <div class="page-navigation__wrapper">
+        <nav class="page-navigation">
+          <ul class="page-navigation__list">
+            <li class="page-navigation__item">
+              <a class="page-navigation__link" href="index.html" title="Ссылка">Главная</a>
+            </li>
+            <li class="page-navigation__item  page-navigation__item--border">
+              <a class="page-navigation__link" href="photo.html" title="Ссылка">Фото и видео</a>
+            </li>
+          </ul>
+          <ul class="page-navigation__list  page-navigation__list--right">
+            <li class="page-navigation__item  page-navigation__item--right">
+              <a class="page-navigation__link" title="Ссылка">Форма отзыва</a>
+            </li>
+            <li class="page-navigation__item">
+              <a class="page-navigation__link" href="https://htmlacademy.ru/" title="Ссылка">Html Academy</a>
+            </li>
+          </ul>
 
-        <button class="toggle  toggle--close" type="button">Закрыть меню</button>
-      </nav>
-      <div class="page-header__wrapper">
-        <div class="logo">
-          <a title="на главную">
-            <img class="logo__item" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
-          </a>
-          <button class="toggle toggle--open" type="button">Открыть меню</button>
+          <button class="toggle  toggle--close" type="button">Закрыть меню</button>
+        </nav>
+      </div>
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <div class="logo">
+            <a href="index.html" title="на главную">
+              <img class="logo__item" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
+            </a>
+            <button class="toggle toggle--open" type="button">Открыть меню</button>
+          </div>
         </div>
       </div>
     </header>
@@ -44,7 +50,7 @@
         </div>
 
         <div class="about">
-          <div class="container__wrapper">
+          <div class="container">
             <p class="about__title">Оставьте свой отзыв</p>
             <p class="about__offer">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностьях</p>
           </div>
@@ -52,7 +58,7 @@
 
         <form class="form-review">
           <div class="form-review__inner">
-            <div class="container__wrapper">
+            <div class="container">
               <h2 class="form-review__title">Представьтесь пожалуйста:</h2>
               <label class="input">
                 Имя <input class="input__value" type="text" name="name" placeholder="Пётр">
@@ -67,7 +73,7 @@
           </div>
 
           <div class="form-review__inner">
-            <div class="container__wrapper">
+            <div class="container">
               <h2 class="form-review__title">Контактная информация:</h2>
               <label class="input">
                 Контактный телефон: <input class="input__value" type="tel" name="tel" placeholder="Введите телефон">
@@ -79,7 +85,7 @@
           </div>
 
           <div class="form-review__inner">
-            <div class="container__wrapper">
+            <div class="container">
               <h2 class="form-review__title">Ваше общее впечатление:</h2>
               <label class="radio">
                 <span class="radio__state"></span>
@@ -97,7 +103,7 @@
           </div>
 
           <div class="form-review__inner">
-            <div class="container__wrapper">
+            <div class="container">
               <h2 class="form-review__title">Посещённые достопримечательности:</h2>
               <label class="checkbox">
                 <span class="checkbox__state"></span>
@@ -119,14 +125,14 @@
           </div>
 
           <div class="form-review__inner">
-            <div class="container__wrapper">
+            <div class="container">
             <h2 class="form-review__title">Опишите свои эмоции:</h2>
             <label class="input">
               <textarea class="input__value  input__value--frame" name="describe-emotions" placeholder="Опишите подробно все свои истории"></textarea>
             </label>
             </div>
           </div>
-          <div class="container__wrapper">
+          <div class="container">
             <button class="button" type="button" name="review-btn">Отправить отзыв</button>
           </div>
         </form>
@@ -134,7 +140,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container__wrapper">
+      <div class="container  container--footer">
         <div class="tag">
           <h2 class="tag__title">#VisitSedona</h2>
         </div>

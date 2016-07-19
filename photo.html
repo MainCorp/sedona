@@ -9,30 +9,36 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-navigation">
-        <ul class="page-navigation__list">
-          <li class="page-navigation__item">
-            <a class="page-navigation__link" href="index.html" title="Ссылка">Главная</a>
-          </li>
-          <li class="page-navigation__item">
-            <a class="page-navigation__link" title="Ссылка">Фото и видео</a>
-          </li>
-          <li class="page-navigation__item">
-            <a class="page-navigation__link" href="form.html" title="Ссылка">Форма отзыва</a>
-          </li>
-          <li class="page-navigation__item">
-            <a class="page-navigation__link" href="https://htmlacademy.ru/" title="Ссылка">Html Academy</a>
-          </li>
-        </ul>
+      <div class="page-navigation__wrapper">
+        <nav class="page-navigation">
+          <ul class="page-navigation__list">
+            <li class="page-navigation__item">
+              <a class="page-navigation__link" href="index.html" title="Ссылка">Главная</a>
+            </li>
+            <li class="page-navigation__item  page-navigation__item--border">
+              <a class="page-navigation__link" title="Ссылка">Фото и видео</a>
+            </li>
+          </ul>
+          <ul class="page-navigation__list  page-navigation__list--right">
+            <li class="page-navigation__item  page-navigation__item--right">
+              <a class="page-navigation__link" href="form.html" title="Ссылка">Форма отзыва</a>
+            </li>
+            <li class="page-navigation__item">
+              <a class="page-navigation__link" href="https://htmlacademy.ru/" title="Ссылка">Html Academy</a>
+            </li>
+          </ul>
 
-        <button class="toggle  toggle--close" type="button">Закрыть меню</button>
-      </nav>
-      <div class="page-header__wrapper">
-        <div class="logo">
-          <a title="на главную">
-            <img class="logo__item" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
-          </a>
-          <button class="toggle toggle--open" type="button">Открыть меню</button>
+          <button class="toggle  toggle--close" type="button">Закрыть меню</button>
+        </nav>
+      </div>
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <div class="logo">
+            <a href="index.html" title="на главную">
+              <img class="logo__item" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
+            </a>
+            <button class="toggle toggle--open" type="button">Открыть меню</button>
+          </div>
         </div>
       </div>
     </header>
@@ -44,7 +50,7 @@
       </div>
 
       <div class="about">
-        <div class="container__wrapper">
+        <div class="container">
           <p class="about__title">Фото и видео</p>
           <p class="about__offer">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
@@ -53,7 +59,7 @@
       <section class="photo">
         <h2 class="photo__section-title">Фотографии</h2>
         <article class="photo__item">
-          <div class="container__wrapper">
+          <div class="container">
             <img class="photo__image" src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Фотография">
             <h2 class="photo__title">Неродные просторы</h2>
             <p class="photo__desc">Автор фото: Борис</p>
@@ -65,7 +71,7 @@
         </article>
 
         <article class="photo__item">
-          <div class="container__wrapper">
+          <div class="container">
             <img class="photo__image" src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Фотография">
             <h2 class="photo__title">Местная растительность</h2>
             <p class="photo__desc">Автор фото: Сергей</p>
@@ -77,7 +83,7 @@
         </article>
 
         <article class="photo__item">
-          <div class="container__wrapper">
+          <div class="container">
             <img class="photo__image" src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Фотография">
             <h2 class="photo__title">Дорога на север</h2>
             <p class="photo__desc">Автор фото: Пётр</p>
@@ -89,7 +95,7 @@
         </article>
 
         <article class="photo__item">
-          <div class="container__wrapper">
+          <div class="container">
             <img class="photo__image" src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Фотография">
             <h2 class="photo__title">Мост дьявола</h2>
             <p class="photo__desc">Автор фото: Антон</p>
@@ -102,14 +108,14 @@
       </section>
 
       <div class="about">
-        <div class="container__wrapper">
+        <div class="container">
           <p class="about__title">Всё ещё сомниваетесь?</p>
           <p class="about__offer">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
       </div>
 
       <div class="presentation">
-        <div class="container__wrapper">
+        <div class="container">
           <img class="presentation__image" src="img/video-mobile@1x.jpg" width="320" height="200" alt="#">
           <div class="presentation__inner">
             <div class="presentation__toddler"></div>
@@ -124,7 +130,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container__wrapper">
+      <div class="container  container--footer">
         <div class="tag">
           <h2 class="tag__title">#VisitSedona</h2>
         </div>
