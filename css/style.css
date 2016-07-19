@@ -393,6 +393,9 @@ th {
   text-transform: uppercase;
   text-align: center; }
   @media (min-width: 768px) {
+    .about__title--size {
+      font-size: 30px; } }
+  @media (min-width: 768px) {
     .about__title {
       font-size: 21px;
       max-width: 485px;
@@ -574,6 +577,10 @@ th {
   background-image: url("../img/text-sedona.svg");
   background-size: contain;
   background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .greeting__title {
+      width: 450px;
+      height: 80px; } }
   .greeting__title--bg {
     /* Блочная модель */
     height: 220px;
@@ -582,7 +589,6 @@ th {
     @media (min-width: 768px) {
       .greeting__title--bg {
         height: 350px;
-        width: 450px;
         margin: 0 auto; } }
 
 .hotel {
@@ -829,6 +835,13 @@ th {
       /* Оформление */
       background-color: transparent; } }
 
+@media (min-width: 768px) {
+  .photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 60px; } }
+
 .photo__section-title {
   visibility: hidden;
   display: none; }
@@ -838,8 +851,24 @@ th {
   padding-top: 20px;
   padding-bottom: 15px;
   border-top: 1px solid #e5e5e5; }
+  @media (min-width: 768px) {
+    .photo__item--fullsize {
+      width: 100%; } }
   .photo__item:last-child {
     border-bottom: 1px solid #e5e5e5; }
+    @media (min-width: 768px) {
+      .photo__item:last-child {
+        border: none; } }
+  @media (min-width: 768px) {
+    .photo__item {
+      border: none;
+      width: 324px;
+      outline: 1px solid red; } }
+
+@media (min-width: 768px) {
+  .photo__image--fullsize {
+    width: 100%;
+    max-height: 400px; } }
 
 .photo__title {
   /* Типографика */
