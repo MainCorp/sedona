@@ -19,12 +19,6 @@
   padding-bottom: 15px;
   border-top: 1px solid $color-geyn;
 
-  &--fullsize {
-    @media #{$tablet} {
-      width: 100%;
-    }
-  }
-
   &:last-child {
     border-bottom: 1px solid $color-geyn;
 
@@ -35,18 +29,43 @@
 
   @media #{$tablet} {
     /* Блочная модель */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;;
     border: none;
     width: 324px;
+    padding: 0;
     outline: 1px solid red;
+
+    /* Оформление */
+    background-color: $color-smoky;
+  }
+
+  &--fullsize {
+    @media #{$tablet} {
+      width: 100%;
+    }
   }
 }
 
 .photo__image {
+
+  @media #{$tablet} {
+    width: 100%;
+  }
+
   &--fullsize {
     @media #{$tablet} {
-      width: 100%;
-      max-height: 400px;
+      height: 400px;
     }
+  }
+}
+
+.photo__wrap {
+  @media #{$tablet} {
+    display: flex;
+    flex-direction: column;
   }
 }
 

@@ -18,8 +18,11 @@
   }
 
   &::after {
-    @include trinagle;
-    bottom: 0;
+    @include trinagle(26px,"bg-intro-triangle-mobile", "svg");
+
+    @media #{$tablet} {
+      @include trinagle(52px, "bg-intro-triangle-tablet", "svg");
+    }
   }
 }
 

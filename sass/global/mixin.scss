@@ -1,15 +1,16 @@
-@mixin trinagle {
+@mixin trinagle($height, $image, $format) {
   content: "";
   /* Позиционирование */
   position: absolute;
   left: 0;
+  bottom: 0;
 
   /* Блочная модель */
   width: 100%;
-  height: 26px;
+  height: $height;
 
   /* Оформление */
-  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-image: url("../img/#{$image}.#{$format}");
   background-repeat: no-repeat;
   background-size: 100% 110%;
 }

@@ -4,6 +4,18 @@
 
   /* Блочная модель */
   margin-left: -20px;
+
+  @media #{$tablet} {
+    margin: 0 60px;
+    outline: 1px solid red;
+  }
+}
+
+.presentation__image {
+  @media #{$tablet} {
+    width: 648px;
+    height: 495px;
+  }
 }
 
 .presentation__toggle {
@@ -18,6 +30,16 @@
 
   /* Оформление */
   background-color: rgba(0, 0, 0, .6);
+
+  @media #{$tablet} {
+    /* Позиционирование */
+    top: 400px;
+    left: 0;
+
+    /* Блочная модель */
+    height: 95px;
+    width: 100%;
+  }
 }
 
 .presentation__line {
@@ -32,6 +54,15 @@
 
   /* Оформление */
   background-color: rgba(255, 255, 255, .2);
+
+  @media #{$tablet} {
+    /* Позиционирование */
+    left: 95px;
+    top: 45px;
+
+    /* Блочная модель */
+    width: 400px;
+  }
 }
 
 .presentation__pointer {
@@ -48,6 +79,10 @@
   background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
+
+  @media #{$tablet} {
+    left: 112px;
+  }
 }
 
 .presentation__set {
@@ -58,6 +93,19 @@
 
   /* Оформление */
   background-color: $color-smoky-white;
+
+  @media #{$tablet} {
+    /* Позиционирование */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    /* Блочная модель */
+    margin-left: 0;
+
+    /* Оформление */
+    background-color: transparent;
+  }
 }
 
 .presentation__img {
@@ -67,5 +115,9 @@
 
   &--replay {
     padding-right: 100px;
+
+    @media #{$tablet} {
+      padding-right: 474px;
+    }
   }
 }

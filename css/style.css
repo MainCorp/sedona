@@ -569,14 +569,28 @@ th {
     /* Позиционирование */
     position: absolute;
     left: 0;
+    bottom: 0;
     /* Блочная модель */
     width: 100%;
     height: 26px;
     /* Оформление */
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
-    background-size: 100% 110%;
-    bottom: 0; }
+    background-size: 100% 110%; }
+    @media (min-width: 768px) {
+      .greeting::after {
+        content: "";
+        /* Позиционирование */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        /* Блочная модель */
+        width: 100%;
+        height: 52px;
+        /* Оформление */
+        background-image: url("../img/bg-intro-triangle-tablet.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 110%; } }
 
 .greeting__title {
   /* Блочная модель */
@@ -744,6 +758,9 @@ th {
   margin-left: -102px; }
 
 .page-footer {
+  /* Блочная модель */
+  padding-top: 26px;
+  /* Оформление */
   background-color: #fefefe; }
 
 .page-header {
@@ -872,9 +889,6 @@ th {
   padding-top: 20px;
   padding-bottom: 15px;
   border-top: 1px solid #e5e5e5; }
-  @media (min-width: 768px) {
-    .photo__item--fullsize {
-      width: 100%; } }
   .photo__item:last-child {
     border-bottom: 1px solid #e5e5e5; }
     @media (min-width: 768px) {
@@ -883,14 +897,32 @@ th {
   @media (min-width: 768px) {
     .photo__item {
       /* Блочная модель */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
       border: none;
       width: 324px;
-      outline: 1px solid red; } }
+      padding: 0;
+      outline: 1px solid red;
+      /* Оформление */
+      background-color: #f2f2f2; } }
+  @media (min-width: 768px) {
+    .photo__item--fullsize {
+      width: 100%; } }
+
+@media (min-width: 768px) {
+  .photo__image {
+    width: 100%; } }
 
 @media (min-width: 768px) {
   .photo__image--fullsize {
-    width: 100%;
-    max-height: 400px; } }
+    height: 400px; } }
+
+@media (min-width: 768px) {
+  .photo__wrap {
+    display: flex;
+    flex-direction: column; } }
 
 .photo__title {
   /* Типографика */
@@ -925,6 +957,15 @@ th {
   position: relative;
   /* Блочная модель */
   margin-left: -20px; }
+  @media (min-width: 768px) {
+    .presentation {
+      margin: 0 60px;
+      outline: 1px solid red; } }
+
+@media (min-width: 768px) {
+  .presentation__image {
+    width: 648px;
+    height: 495px; } }
 
 .presentation__toggle {
   /* Позиционирование */
@@ -936,6 +977,14 @@ th {
   height: 45px;
   /* Оформление */
   background-color: rgba(0, 0, 0, 0.6); }
+  @media (min-width: 768px) {
+    .presentation__toggle {
+      /* Позиционирование */
+      top: 400px;
+      left: 0;
+      /* Блочная модель */
+      height: 95px;
+      width: 100%; } }
 
 .presentation__line {
   /* Позиционирование */
@@ -947,6 +996,13 @@ th {
   width: 235px;
   /* Оформление */
   background-color: rgba(255, 255, 255, 0.2); }
+  @media (min-width: 768px) {
+    .presentation__line {
+      /* Позиционирование */
+      left: 95px;
+      top: 45px;
+      /* Блочная модель */
+      width: 400px; } }
 
 .presentation__pointer {
   /* Позиционирование */
@@ -960,6 +1016,9 @@ th {
   background-color: #fff;
   border-radius: 50%;
   cursor: pointer; }
+  @media (min-width: 768px) {
+    .presentation__pointer {
+      left: 112px; } }
 
 .presentation__set {
   /* Блочная модель */
@@ -968,6 +1027,16 @@ th {
   margin-top: -5px;
   /* Оформление */
   background-color: #eee; }
+  @media (min-width: 768px) {
+    .presentation__set {
+      /* Позиционирование */
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      /* Блочная модель */
+      margin-left: 0;
+      /* Оформление */
+      background-color: transparent; } }
 
 .presentation__img {
   /* Блочная модель */
@@ -975,6 +1044,9 @@ th {
   padding-left: 30px; }
   .presentation__img--replay {
     padding-right: 100px; }
+    @media (min-width: 768px) {
+      .presentation__img--replay {
+        padding-right: 474px; } }
 
 .radio {
   /* Блочная модель */
