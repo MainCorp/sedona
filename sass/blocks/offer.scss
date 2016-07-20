@@ -1,17 +1,17 @@
 .offer {
+  background-color: $color-blue-gray;
   @media #{$tablet} {
-    /* Блочная модель */
-    display: flex;
+    background-color: #fff;
   }
 }
 
 .offer__wrapper {
-  /* Оформление */
-  background-color: $color-blue-gray;
-
   @media #{$tablet} {
     /* Блочная модель */
     width: 255px;
+
+    /* Оформление */
+    background-color: $color-blue-gray;
   }
 }
 
@@ -72,7 +72,9 @@
   overflow: hidden;
 
   &--place {
-    order: -1;
+    @media #{$tablet} {
+      order: -1;
+    }
   }
 
   @media #{$tablet} {

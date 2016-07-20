@@ -16,6 +16,11 @@
     /* Блочная модель */
     padding: 90px 0;
   }
+
+  &::after {
+    @include trinagle;
+    bottom: 0;
+  }
 }
 
 .greeting__title {

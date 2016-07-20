@@ -1,15 +1,26 @@
 .input {
+  /* Блочная модель */
+  display: flex;
+  margin-bottom: 21px;
+
   /* Типографика */
   font-family: $font-PTSans;
   font-size: 14px;
   line-height: 26px;
   color: $color-alarm;
   text-transform: uppercase;
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
 }
 
 .input__value {
   /* Блочная модель */
   border: none;
+  padding: 16px 20px;
+  margin-left: 18px;
+  width: 100%;
 
   /* Типографика */
   font-family: $font-PTSans_Bold;
@@ -20,4 +31,8 @@
   /* Оформление */
   background-color: $color-smoky-white;
   outline: 0;
+
+  &--wrap {
+    margin-left: 0;
+  }
 }

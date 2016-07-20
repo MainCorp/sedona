@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+
   outline: 1px solid red;
 
   &--footer  {
@@ -12,6 +13,22 @@
       /* Блочная модель */
       flex-direction: row;
       justify-content: space-around;
+    }
+  }
+
+  &--flex {
+    @media #{$tablet} {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &--addition {
+    @media #{$tablet} {
+      /* Блочная модель */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 

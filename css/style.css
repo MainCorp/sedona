@@ -366,19 +366,6 @@ th {
 
 .about {
   position: relative; }
-  .about::after {
-    content: "";
-    /* Позиционирование */
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    /* Блочная модель */
-    width: 320px;
-    height: 26px;
-    /* Оформление */
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 110%; }
 
 .about__title {
   /* Блочная модель */
@@ -393,13 +380,13 @@ th {
   text-transform: uppercase;
   text-align: center; }
   @media (min-width: 768px) {
-    .about__title--size {
-      font-size: 30px; } }
-  @media (min-width: 768px) {
     .about__title {
       font-size: 21px;
       max-width: 485px;
       margin: 0 auto; } }
+  @media (min-width: 768px) {
+    .about__title--size {
+      font-size: 30px; } }
 
 .about__offer {
   /* Блочная модель */
@@ -421,15 +408,11 @@ th {
   background-color: #eee; }
   @media (min-width: 768px) {
     .addition {
-      /* Блочная модель */
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 50px; } }
+      background-color: transparent; } }
 
 .addition__item {
   /* Блочная модель */
-  padding: 30px 0;
+  padding: 30px 20px;
   border-bottom: 1px solid #d6d6d6; }
   .addition__item:last-child {
     border-bottom: none; }
@@ -438,7 +421,9 @@ th {
       /* Блочная модель */
       border: none;
       width: 170px;
-      padding: 0; } }
+      padding: 50px;
+      /* Оформление */
+      background-color: #eee; } }
 
 .addition__title {
   /* Блочная модель */
@@ -498,6 +483,7 @@ th {
 .checkbox {
   /* Блочная модель */
   display: flex;
+  margin-bottom: 25px;
   /* Типографика */
   font-family: "PTSans Bold";
   font-size: 18px;
@@ -528,6 +514,16 @@ th {
       /* Блочная модель */
       flex-direction: row;
       justify-content: space-around; } }
+  @media (min-width: 768px) {
+    .container--flex {
+      display: flex;
+      flex-direction: row; } }
+  @media (min-width: 768px) {
+    .container--addition {
+      /* Блочная модель */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
   @media (min-width: 768px) {
     .container {
       width: 768px; } }
@@ -568,6 +564,19 @@ th {
   .greeting--background {
     /* Блочная модель */
     padding: 90px 0; }
+  .greeting::after {
+    content: "";
+    /* Позиционирование */
+    position: absolute;
+    left: 0;
+    /* Блочная модель */
+    width: 100%;
+    height: 26px;
+    /* Оформление */
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    bottom: 0; }
 
 .greeting__title {
   /* Блочная модель */
@@ -626,16 +635,24 @@ th {
       margin: 40px auto; } }
 
 .input {
+  /* Блочная модель */
+  display: flex;
+  margin-bottom: 21px;
   /* Типографика */
   font-family: "PTSans";
   font-size: 14px;
   line-height: 26px;
   color: #333;
   text-transform: uppercase; }
+  .input--wrap {
+    flex-wrap: wrap; }
 
 .input__value {
   /* Блочная модель */
   border: none;
+  padding: 16px 20px;
+  margin-left: 18px;
+  width: 100%;
   /* Типографика */
   font-family: "PTSans Bold";
   font-size: 18px;
@@ -644,6 +661,8 @@ th {
   /* Оформление */
   background-color: #eee;
   outline: 0; }
+  .input__value--wrap {
+    margin-left: 0; }
 
 .map {
   /* Блочная модель */
@@ -651,18 +670,18 @@ th {
   height: 350px;
   width: 320px; }
 
-@media (min-width: 768px) {
-  .offer {
-    /* Блочная модель */
-    display: flex; } }
-
-.offer__wrapper {
-  /* Оформление */
+.offer {
   background-color: #81b3d2; }
   @media (min-width: 768px) {
-    .offer__wrapper {
-      /* Блочная модель */
-      width: 255px; } }
+    .offer {
+      background-color: #fff; } }
+
+@media (min-width: 768px) {
+  .offer__wrapper {
+    /* Блочная модель */
+    width: 255px;
+    /* Оформление */
+    background-color: #81b3d2; } }
 
 .offer__title {
   /* Блочная модель */
@@ -711,8 +730,9 @@ th {
   width: 280px;
   height: 260px;
   overflow: hidden; }
-  .offer__image--place {
-    order: -1; }
+  @media (min-width: 768px) {
+    .offer__image--place {
+      order: -1; } }
   @media (min-width: 768px) {
     .offer__image {
       width: 512px; } }
@@ -837,6 +857,7 @@ th {
 
 @media (min-width: 768px) {
   .photo {
+    /* Блочная модель */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -861,6 +882,7 @@ th {
         border: none; } }
   @media (min-width: 768px) {
     .photo__item {
+      /* Блочная модель */
       border: none;
       width: 324px;
       outline: 1px solid red; } }
@@ -885,6 +907,10 @@ th {
   line-height: 24px;
   color: #333; }
 
+.photo__inner {
+  display: flex;
+  flex-direction: row; }
+
 .photo__quantity {
   /* Блочная модель */
   margin: 0;
@@ -894,12 +920,66 @@ th {
   line-height: 24px;
   color: #000; }
 
+.presentation {
+  /* Позиционирование */
+  position: relative;
+  /* Блочная модель */
+  margin-left: -20px; }
+
+.presentation__toggle {
+  /* Позиционирование */
+  position: absolute;
+  left: 20px;
+  top: 155px;
+  /* Блочная модель */
+  width: 280px;
+  height: 45px;
+  /* Оформление */
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.presentation__line {
+  /* Позиционирование */
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  /* Блочная модель */
+  height: 3px;
+  width: 235px;
+  /* Оформление */
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.presentation__pointer {
+  /* Позиционирование */
+  position: absolute;
+  top: -3px;
+  left: 35px;
+  /* Блочная модель */
+  width: 9px;
+  height: 9px;
+  /* Оформление */
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer; }
+
 .presentation__set {
+  /* Блочная модель */
+  display: flex;
+  margin-left: 20px;
+  margin-top: -5px;
+  /* Оформление */
   background-color: #eee; }
+
+.presentation__img {
+  /* Блочная модель */
+  padding: 20px 0;
+  padding-left: 30px; }
+  .presentation__img--replay {
+    padding-right: 100px; }
 
 .radio {
   /* Блочная модель */
   display: flex;
+  margin-bottom: 15px;
   /* Типографика */
   font-family: "PTSans Bold";
   font-size: 18px;

@@ -44,7 +44,6 @@
     </header>
 
     <main class="page-content">
-      <div class="container">
         <div class="greeting">
           <div class="greeting__title"></div>
         </div>
@@ -61,13 +60,13 @@
             <div class="container">
               <h2 class="form-review__title">Представьтесь пожалуйста:</h2>
               <label class="input">
-                Имя <input class="input__value" type="text" name="name" placeholder="Пётр">
+                Имя: <input class="input__value" type="text" name="name" placeholder="Пётр">
               </label>
               <label class="input">
-                Фамилия <input class="input__value" type="text" name="surname" placeholder="Иванов">
+                Фамилия: <input class="input__value" type="text" name="surname" placeholder="Иванов">
               </label>
               <label class="input">
-                Отчество <input class="input__value" type="text" name="patronymic" placeholder="Александрович">
+                Отчество: <input class="input__value" type="text" name="patronymic" placeholder="Александрович">
               </label>
             </div>
           </div>
@@ -75,11 +74,11 @@
           <div class="form-review__inner">
             <div class="container">
               <h2 class="form-review__title">Контактная информация:</h2>
-              <label class="input">
-                Контактный телефон: <input class="input__value" type="tel" name="tel" placeholder="Введите телефон">
+              <label class="input  input--wrap">
+                Контактный телефон: <input class="input__value  input__value--wrap" type="tel" name="tel" placeholder="Введите телефон">
               </label>
-              <label class="input">
-                Электронная почта: <input class="input__value" type="email" name="email" placeholder="Введите e-mail">
+              <label class="input  input--wrap">
+                Электронная почта: <input class="input__value  input__value--wrap" type="email" name="email" placeholder="Введите e-mail">
               </label>
             </div>
           </div>
@@ -128,7 +127,7 @@
             <div class="container">
             <h2 class="form-review__title">Опишите свои эмоции:</h2>
             <label class="input">
-              <textarea class="input__value  input__value--frame" name="describe-emotions" placeholder="Опишите подробно все свои истории"></textarea>
+              <textarea class="input__value  input__value--frame  input__value--wrap" name="describe-emotions" placeholder="Опишите подробно все свои истории"></textarea>
             </label>
             </div>
           </div>
@@ -136,7 +135,6 @@
             <button class="button" type="button" name="review-btn">Отправить отзыв</button>
           </div>
         </form>
-      </div>
     </main>
 
     <footer class="page-footer">

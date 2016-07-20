@@ -2,17 +2,13 @@
   background-color: $color-smoky-white;
 
   @media #{$tablet} {
-    /* Блочная модель */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px;
+    background-color: transparent;
   }
 }
 
 .addition__item {
   /* Блочная модель */
-  padding: 30px 0;
+  padding: 30px 20px;
   border-bottom: 1px solid $color-abdel-kerim;
 
   &:last-child {
@@ -23,7 +19,10 @@
     /* Блочная модель */
     border: none;
     width: 170px;
-    padding: 0;
+    padding: 50px;
+
+    /* Оформление */
+    background-color: $color-smoky-white;
   }
 }
 

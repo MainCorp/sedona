@@ -1,5 +1,6 @@
 .photo {
   @media #{$tablet} {
+    /* Блочная модель */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -33,6 +34,7 @@
   }
 
   @media #{$tablet} {
+    /* Блочная модель */
     border: none;
     width: 324px;
     outline: 1px solid red;
@@ -63,6 +65,11 @@
   font-size: 14px;
   line-height: 24px;
   color: $color-alarm;
+}
+
+.photo__inner {
+  display: flex;
+  flex-direction: row;
 }
 
 .photo__quantity {

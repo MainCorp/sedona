@@ -1,9 +1,5 @@
 .about {
   position: relative;
-
-  &::after {
-    @include trinagle;
-  }
 }
 .about__title {
   /* Блочная модель */
@@ -19,16 +15,16 @@
   text-transform: uppercase;
   text-align: center;
 
-  &--size {
-    @media #{$tablet} {
-      font-size: 30px;
-    }
-  }
-
   @media #{$tablet} {
     font-size: 21px;
     max-width: 485px;
     margin: 0 auto;
+  }
+
+  &--size {
+    @media #{$tablet} {
+      font-size: 30px;
+    }
   }
 }
 
